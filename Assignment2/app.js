@@ -35,18 +35,17 @@
 // addPara("This is a new Paragraph")
 
 // Point #4
-// const bodyEl = document.querySelector("body")
-// const ulEl = document.createElement("ul")
-// bodyEl.append(ulEl)
+const bodyEl = document.querySelector("body")
+const ulEl = document.createElement("ul")
+bodyEl.append(ulEl)
 
-// function myList(item){
-//     const newItem = document.createElement("li")
-
-//     ulEl.append(newItem)
-//     newItem.textContent = item
-// }
-// myList("Fruit")
-// myList("Vegetables")
+function myList(item){
+    const newItem = document.createElement("li")
+    newItem.textContent = item
+    ulEl.append(newItem)
+}
+myList("Fruit")
+myList("Vegetables")
 
 // Point #5
 // function changeBg(element, color){
