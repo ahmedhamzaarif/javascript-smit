@@ -1,29 +1,27 @@
 // Point #1
-// function addFunc(){
-//     let num = 5
-//     function checkNumber(x){
-//         return num + x
+// function addFunc(x){
+//     function checkNumber(y){
+//         return x + y
 //     }
 //     return checkNumber
 // }
 
-// let number = addFunc()
+// let number = addFunc(5)
 // console.log( number(6) )
 
 // Point #2
-// function recFunc(arr, value) {
+// function searchArray(arr, value) {
 //     if (arr.length === 0) {
 //         return false;
 //     } else if (arr[0] === value) {
 //         return true;
 //     } else {
-//         return recFunc(arr.slice(1), value);
+//         return searchArray(arr.slice(1), value);
 //     }
 // }
 
-// const arr = [1, 2, 3, 4, 5];
-// console.log(recFunc(arr, 3));
-// console.log(recFunc(arr, 6));
+// const numlist = [1, 2, 3, 4, 5];
+// console.log(searchArray(numlist, 5));
 
 // Point #3
 // function addPara(text){
@@ -38,17 +36,17 @@
 
 // Point #4
 // const bodyEl = document.querySelector("body")
-// const newList = document.createElement("ul")
-// bodyEl.append(newList)
+// const ulEl = document.createElement("ul")
+// bodyEl.append(ulEl)
 
 // function myList(item){
 //     const newItem = document.createElement("li")
 
-//     newList.append(newItem)
+//     ulEl.append(newItem)
 //     newItem.textContent = item
 // }
 // myList("Fruit")
-// myList("Fruit")
+// myList("Vegetables")
 
 // Point #5
 // function changeBg(element, color){
@@ -56,6 +54,7 @@
 //     el.style.backgroundColor = color
 // }
 // changeBg("h1", "red")
+// changeBg("#title", "yellow")
 
 // Point #6
 // function lsFunc(key, object){
@@ -80,26 +79,26 @@
 // console.log( rlFunc("Student Data") )
 
 // Point #8
-function objFunc(object) {
-    for (const key in object) {
-      if (object.hasOwnProperty(key)) {
-        localStorage.setItem(key, JSON.stringify(object[key]));
-      }
-    }
-    const retrievedObject = {};
-    for (const key in object) {
-      if (object.hasOwnProperty(key)) {
-        retrievedObject[key] = JSON.parse(localStorage.getItem(key));
-      }
-    }
-    return retrievedObject;
-}
+// function objFunc(object) {
+//     for (const key in object) {
+//       if (object.hasOwnProperty(key)) {
+//         localStorage.setItem(key, JSON.stringify(object[key]));
+//       }
+//     }
+//     const retrievedObject = {};
+//     for (const key in object) {
+//       if (object.hasOwnProperty(key)) {
+//         retrievedObject[key] = JSON.parse(localStorage.getItem(key));
+//       }
+//     }
+//     return retrievedObject;
+// }
   
-const myObject = {
-name: "Ahmed Hamza",
-age: 21,
-email: "ahmed.hamza@gmail.com"
-};
-const retrievedObject = objFunc(myObject);
+// const myObject = {
+// name: "Ahmed Hamza",
+// age: 21,
+// email: "ahmed.hamza@gmail.com"
+// };
+// const retrievedObject = objFunc(myObject);
 
-console.log(retrievedObject);
+// console.log(retrievedObject);
