@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movie Recommendation App</h1>
+    </header>
+    <main>
+      <form>
+        <label for="genre">Genre:</label>
+        <select id="genre">
+          <option value="">--Select--</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="thriller">Thriller</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <select id="rating">
+          <option value="">--Select--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <label for="release-year">Release Year:</label>
+        <select id="release-year">
+          <option value="">--Select--</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2008">2008</option>
+        </select>
+
+        <button id="submit-btn" type="button">Get Recommendations</button>
+      </form>
+
+      <div id="recommendations"></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
